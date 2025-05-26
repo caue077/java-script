@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pais</h1>
+    Em que pais vc mora <input type="text" name="pais1" id="pais1">
+    <input type="button" value="Verifcar" onclick="ver()">
+    <div id="res"></div>
+
+    <script>
+        function ver() {
+            var pais = document.getElementById('pais1').value.toLowerCase()
+            var res = document.getElementById('res')
+            
+            if (pais == 'coreia') {
+                res.innerHTML = `<p>Você mora em ${pais}</p><p>Você é coreano</p>`
+            } else {
+                res.innerHTML = `<p>Você mora em ${pais}</p><p>Você é estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
