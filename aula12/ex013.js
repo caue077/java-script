@@ -1,5 +1,5 @@
 var agora = new Date()
-var hora = agora.getHours
+var hora = agora.getHours()
 console.log(`Agora sao ${agora} horas`)
 if (hora < 12) {
     console.log('BOM DIA!')
